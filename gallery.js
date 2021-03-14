@@ -21,12 +21,7 @@ const makeGalleryItem = ({preview, original, description}) => {
     return itemEl;
 }
 
-// console.log(makeGalleryItem(galleryItems[1]));
-
 const galleryItemsSet = galleryItems.map(makeGalleryItem);
-// console.log(galleryItemsSet);
 
 const galleryEl = document.querySelector('.js-gallery')
 galleryEl.append(...galleryItemsSet);
-
-console.log(galleryEl);
